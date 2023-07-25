@@ -1,0 +1,55 @@
+
+.header a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #2F8739;
+}
+
+/* Media query for screens up to 1023px (including tablets and smaller devices) */
+@media screen and (max-width: 768px) {
+  /* Add your styles for smaller devices here */
+
+}
+
+/* Media query for large desktops (min-width: 1024px) */
+@media screen and (min-width: 768px) {
+  .header #logo {
+    width: 12rem;
+    height: auto;
+    /* Add your styles specific to large desktop views here */
+  }
+
+  .top-container {
+    display: flex;
+    justify-content: space-between; /* Align elements to the left and right edges */
+    align-items: center; 
+    margin-bottom: 1.2rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+    font-size: 1rem;
+  }
+
+  .search-icon {
+    height: 2rem;
+    width: auto;
+  }
+
+  .social-media-icon {
+    position: absolute;
+    height: 1.25rem;
+    width: auto;
+    padding: 5px 5px;
+    right: 0;
+    top: 0;
+  }
+
+  .header {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
