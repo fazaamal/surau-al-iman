@@ -5,6 +5,10 @@
   color: #2F8739;
 }
 
+.header {
+  z-index: 100;
+}
+
 /* Media query for screens up to 1023px (including tablets and smaller devices) */
 @media screen and (max-width: 768px) {
   /* Add your styles for smaller devices here */
@@ -14,7 +18,7 @@
 /* Media query for large desktops (min-width: 1024px) */
 @media screen and (min-width: 768px) {
   .header #logo {
-    width: 12rem;
+    width: 14rem;
     height: auto;
     /* Add your styles specific to large desktop views here */
   }
@@ -27,10 +31,11 @@
   }
 
   .links {
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 10%;
     font-size: 1rem;
   }
 
@@ -41,7 +46,7 @@
 
   .social-media-icon {
     position: absolute;
-    height: 1.25rem;
+    height: 1.6rem;
     width: auto;
     padding: 5px 5px;
     right: 0;

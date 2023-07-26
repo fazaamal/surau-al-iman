@@ -1,3 +1,137 @@
-.slideshow {
-  height: 600px;
+.about{
+  /* outline-top: #2F8739 2px solid; */
+  /* padding-top: 2rem; */
+}
+
+.about h1{
+  font-family: 'Raleway', sans-serif;
+  color: #2F8739;
+  display: grid;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.about-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 29% 71% 38% 62% / 57% 51% 49% 43%;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+}
+
+.about p{
+  font-family: 'Inter', sans-serif;
+  color: #6A956F;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Apply this style to the container of the background pattern */
+  /* Apply this style to the container of the background pattern */
+  .home-content-1 {
+    position: relative;
+  }
+
+  .background-pattern-container {
+    position: absolute;
+    left: calc(-1* var(--large-gutter-margin, 6rem));
+    bottom: 0;
+    width: calc(100% + 2 * var(--large-gutter-margin, 6rem));
+    height: 100% ; /* Set the height to 70% of the parent container's height */
+    display: flex;
+    flex-direction: row;
+    z-index: -2;
+  }
+
+  .background-pattern-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255, 1));
+  }
+
+  .background-pattern-container::after {
+    border-bottom: 5px solid #2F8739 
+  }
+
+  .background-pattern{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .separator {
+    margin: 1rem 0;
+    position: absolute;
+    left: 0;
+    width: 100%; /* Set the width to 100% of the viewport */
+    height: 3rem; /* Set the desired height of the background pattern */
+    background-image: url('src/images/background/banner.png');
+    background-repeat: repeat-x; /* Repeat the image horizontally */
+    background-size: 30%;
+  }
+
+  .banner {
+    position: absolute;
+    left: 0;
+    height: 2rem;
+    margin: 0.5rem 0;
+  }
+
+  .about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    /* margin-bottom: 2rem; */
+    /* border-bottom: #2F8739  2px solid; */
+  }
+
+  .about h1 {
+    border-top: #2F8739 2px solid;
+    padding-top: 1rem;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-1,
+  .about-2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+  }
+
+  .about p {
+    line-height: 3rem;
+    font-size: 1.1rem;
+  }
+  /* Apply this style to the background pattern */
+  /* .background-pattern-left {
+    position:inherit;
+    bottom: 0;
+    height: 100%; /* Set the height to 100% to fill the container's height */
+    /* width: auto;
+    z-index: -2;
+    left: 0;
+  }
+
+  .background-pattern-right{
+    position:inherit;
+    bottom: 0;
+    height: 100%; /* Set the height to 100% to fill the container's height */
+    /* width: auto;
+    z-index: -2;
+    right: 0;
+  } */ 
+
 }

@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom';
 import './Header.css'
+import { useEffect } from 'react';
 
-const Header = () => {
+const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
+    useEffect(() => {
+        setTimeout(() => {
+          onHeaderLoad(); // Call the onHeaderLoad function when the header has loaded
+        }, 0); // Simulating a 2-second loading time
+      }, [onHeaderLoad]);
+
     return ( 
         <div className='header'>
             <Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="src/images/icons/fb.svg" alt="" id='fb-icon'/></Link>
