@@ -49,26 +49,34 @@
   opacity: 1;
 }
 
+.buttons{
+  width: 100%;
+
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
 /* Navigation buttons styles */
 .prevButton,
 .nextButton {
   position: absolute;
   top: 50%;
+  /* left: 0; */
   transform: translateY(-50%);
   font-size: 10rem;
   background: transparent;
   border: none;
   color: #fff;
   cursor: pointer;
-  z-index: 1;
   opacity: 0.5;
+  height: 100%;
+  width: 50%
 }
 
 .prevButton {
-  left: 10px;
-  /* z-index: 100; */
+  left: 0;
 }
 
 .nextButton {
-  right: 10px;
+  right: 0;
+  /* width: 4rem; */
 }

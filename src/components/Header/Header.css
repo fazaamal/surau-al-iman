@@ -10,10 +10,11 @@
   margin-bottom: 0.5rem;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  margin-bottom: 2rem;
 }
 
 .header #logo {
-  width: 14rem;
+  width: 12rem;
   height: auto;
 }
 
@@ -106,8 +107,8 @@
     position: fixed;
     z-index: 1000;
     height: 100%;
-    width: 50%;
-    left: -50%;
+    width: 60%;
+    left: -60%;
     transition: left 0.3s ease-in-out;
     top: 0;
     bottom: 0;
@@ -136,9 +137,12 @@
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-left: 1rem;
+    /* padding-right: 1rem; */
   }
 }
 
 @media screen and (min-width: 601px) and (max-width:  900px) {
-
+  .links {
+    padding: 0 2%;
+  }
 }

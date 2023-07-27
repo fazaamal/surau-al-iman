@@ -48,12 +48,12 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
                             marginTop: '1rem',
                             marginBottom: '1.5rem'
                         }}>LINKS</li>
-
-                    <li className='item'><Link className='link' to={'/donate'}>DONATE</Link></li>
-                    <li className='item'><Link className='link' to={'/events'}>WHATS ON</Link></li>
-                    <li className='item'><Link className='link' to={'/announcements'}>ANNOUNCEMENTS</Link></li>
-                    <li className='item'><Link className='link' to={'/gallery'}>GALLERY</Link></li>
-                    <li className='item'><Link className='link' to={'/contact-us'}>CONTACT US</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/'}>HOME</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/donate'}>DONATE</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/events'}>WHATS ON</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/announcements'}>ANNOUNCEMENTS</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/gallery'}>GALLERY</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/contact-us'}>CONTACT US</Link></li>
                     <li className='item' style={{
                         fontWeight: 'normal',
                         marginTop: '2rem',

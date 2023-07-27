@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components';
-import { Home } from './pages';
+import { Donate, Home } from './pages';
 import './App.css';
 import React, { useState } from 'react';
 import { constants } from './constants';
@@ -24,6 +24,8 @@ function App() {
             {isHeaderLoaded && (
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/donate" element={<Donate />} />
+
               </Routes>
             )}
           </div>
