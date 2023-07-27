@@ -4,6 +4,7 @@ import { Home } from './pages';
 import './App.css';
 import React, { useState } from 'react';
 import { constants } from './constants';
+import { setProperties } from './utils';
 
 function App() {
   const [isHeaderLoaded, setIsHeaderLoaded] = useState(false);
@@ -12,15 +13,7 @@ function App() {
     setIsHeaderLoaded(true);
   };
 
-  // const mediaQueryStyles: React.CSSProperties = {
-  //   '@media screen and (min-width: 768px)': {
-  //     body: {
-  //       margin: '0 5rem',
-  //     },
-  //   },
-  // };
-  document.documentElement.style.setProperty('--large-gutter-margin', constants['large-gutter-margins']);
-  // document.documentElement.style.setProperty('--gutter-margin', );
+  setProperties(constants, document);
 
   return (
     <>

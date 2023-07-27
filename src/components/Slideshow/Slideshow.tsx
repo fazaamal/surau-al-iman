@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Slideshow.css'; // Import the CSS file for slideshow styles
 
-const Slideshow = ({ images, height }: { images: string[], height: string }) => {
+const Slideshow = ({ images, style }: { images: string[], style?: Object }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -27,9 +27,7 @@ const Slideshow = ({ images, height }: { images: string[], height: string }) => 
   };
 
   return (
-    <div className="slideshow" style={{
-      height
-    }}>
+    <div className="slideshow" style={style}>
       {images.map((image, index) => (
         <img
           key={index}
