@@ -22,7 +22,7 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
         <div className='header'>
 
             <div className="top-container">
-                <Link to={'/'}><img className='logo' src="src/images/logo/Logo Horizontal.png" alt="Surau Al-Iman Logo " id='logo'/></Link>
+                <Link to={'/'}><img className='logo' src="src/images/logo/Logo Transparent.png" alt="Surau Al-Iman Logo " id='logo'/></Link>
                 <img className='search-icon' src="src/images/icons/search.svg" alt="" id='search-icon' />
                 <img className='menu-icon' src="src/images/icons/menu.svg" alt="" id='search-icon' onClick={showSidebar}/>
             </div>

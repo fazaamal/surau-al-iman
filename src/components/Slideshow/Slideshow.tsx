@@ -38,12 +38,17 @@ const Slideshow = ({ images, style }: { images: string[], style?: Object }) => {
       ))}
 
       <div className="buttons">
-        <button onClick={goToPrevSlide} className="prevButton">
-          
-        </button>
-        <button onClick={goToNextSlide} className="nextButton">
-          
-        </button>
+        <button onClick={goToPrevSlide} className="prevButton" 
+        style={
+          images.length === 1 ?{
+          display: 'none'
+        }: {}
+        }/>
+        <button onClick={goToNextSlide} className="nextButton" 
+        style={
+          images.length === 1 ?{
+          display: 'none'
+        }: {}} />
       </div>
     </div>
   );
