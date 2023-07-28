@@ -30,17 +30,21 @@ const Home = () => {
     return ( 
         <div className="home">
             <div className="home-content-1">
-                <div className="background-pattern-container">
-                    {/* <img src="src/images/background/islamic-pattern.png" alt="" className="background-pattern-left" />
-                    <img src="src/images/background/islamic-pattern.png" alt="" className="background-pattern-right" /> */}
+                {/* <div className="background-pattern-container">
                     <img className="background-pattern" src="src/images/background/islamic-pattern-repeat.png" alt="" />
-                </div>
+                </div> */}
                 <div className="slideshow-containter">
                     <Slideshow images={imagePaths}/>
                 </div>
             </div>
 
             <div className="about">
+                <Line style={{
+                        top: "2rem",
+                        width: '90%',
+                        left: '50%',
+                        transform: 'translateX(-50%)'
+                    }}/>
                 <h1>ABOUT SURAU AL-IMAN</h1>
                 
 
@@ -52,7 +56,10 @@ const Home = () => {
                 </div>
 
                 <Line style={{
-                    bottom: "2rem"
+                    bottom: "2rem",
+                    width: '90%',
+                    left: '50%',
+                    transform: 'translateX(-50%)'
                 }}/>
             </div>
 

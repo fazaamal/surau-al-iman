@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;700&display=swap');
 
-:root {
-  background-color: white;
+html {
+  /* background-color: red; */
+  background-image: url('src/images/background/bg3.png');
+  background-size: 50%;
+  background-repeat: repeat;
+  /* background-attachment: fixed; */
+  /* opacity: 0.6; */
 }
 
 *{
@@ -9,11 +14,15 @@
 }
 
 body {
+  background-color: var(--background-color, white);
   overflow-x: hidden;
   margin: 0 var(--large-gutter-margin , 6rem);
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  border-left: #2F8739 2px solid;
+  border-right: #2F8739 2px solid;
 }
 
 h1 {
@@ -40,6 +49,10 @@ h3 {
 
   *{
     outline: 2px rgb(50, 40, 159) solid;
+  }
+
+  :root {
+    background-size: 100%;
   }
 }
 
