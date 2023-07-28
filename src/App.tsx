@@ -15,6 +15,13 @@ function App() {
 
   setProperties(constants, document);
 
+const background = document.querySelector('.background') as HTMLElement;
+
+window.addEventListener('scroll', function() {
+  const yPos = -window.scrollY * 0.3;
+  background.style.transform = `translateY(${yPos}px)`;
+});
+  
   return (
     <>
       <Router>
