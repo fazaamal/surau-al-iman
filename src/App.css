@@ -9,10 +9,6 @@ html {
   /* opacity: 0.6; */
 }
 
-*{
-  outline: 2px limegreen solid;
-}
-
 body {
   background-color: var(--background-color, white);
   overflow-x: hidden;
@@ -65,6 +61,10 @@ h3 {
   *{
     outline: 2px rgb(205, 50, 140) solid;
   }
+}
+
+*{
+  outline: 2px limegreen solid;
 }
 
 *{

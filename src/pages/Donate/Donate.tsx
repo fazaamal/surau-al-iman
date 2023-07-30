@@ -1,9 +1,11 @@
+import { Banner } from '../../components';
 import './Donate.css'
 
 const Donate = () => {
   return ( 
     <div className="donate">
-      <h1>MAKE A DONATION</h1>
+      <Banner text="MAKE A DONATION" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
+      {/* <h1>MAKE A DONATION</h1> */}
       <div className="grid-container">
         <div className="grid-item">
           <h2>QR</h2>

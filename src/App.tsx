@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components';
-import { Donate, Home } from './pages';
+import { Donate, Events, Home } from './pages';
 import './App.css';
 import React, { useState } from 'react';
 import { constants } from './constants';
@@ -25,7 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/donate" element={<Donate />} />
-
+                <Route path='/events' element={<Events />}/>
               </Routes>
             )}
           </div>

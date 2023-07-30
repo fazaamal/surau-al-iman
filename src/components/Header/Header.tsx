@@ -13,9 +13,11 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
     const showSidebar = () => {
         const sidebar = document.getElementsByClassName('sidebar')[0] as HTMLElement;
         const overlay = document.getElementsByClassName('overlay')[0] as HTMLElement;
+        const body = document.getElementsByTagName('body')[0] as HTMLElement;
         // sidebar.toggleAttribute('show');
         sidebar.classList.toggle('show');
         overlay.classList.toggle('show');
+        body.classList.toggle('no-scroll');
     }
 
     return ( 

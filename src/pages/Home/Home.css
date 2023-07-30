@@ -59,13 +59,6 @@ body{
   background-size: 30%;
 }
 
-.banner {
-  position: absolute;
-  left: 0;
-  height: 2rem;
-  margin: 0.5rem 0;
-}
-
 .about{
   /* scroll-snap-align: start; */
   position: relative;
