@@ -1,0 +1,97 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 250px);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.event-description {
+  margin-top: 1.245rem;
+  grid-column: span 1;
+}
+
+.event-description .image-container {
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+}
+
+.event-description img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.event-details {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 3rem;
+  max-width: 300px;
+  /* height: 700px; */
+  font-family: 'Raleway', sans-serif;
+}
+
+.event-details p {
+  text-align: center;
+  /* font-weight: bold; */
+  /* font-size: 1.25rem; */
+  text-wrap: balance;
+  /* padding: 1.5rem; */;
+}
+
+.event-description p {
+  margin-top: 0;  
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .event-description {
+    order: 2;
+  }
+
+  .event-details{
+    order: 1;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    gap: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .event-details p {
+    font-size: 1.25rem;
+    /* font-weight: bold; */
+    padding: 0 2rem;
+  }
+
+
+  .event-description img {
+    width: 90%;
+  }
+}
+
+/* Media query for screens with width between 601px and 1200px */
+@media screen and (min-width: 601px) and (max-width:  900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .event-description {
+    order: 2;
+  }
+
+  .event-details{
+    order: 1;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* border: var(--primary-color) solid 1px; */
+  }
+}

@@ -54,7 +54,7 @@ body{
   left: 0;
   width: 100%; /* Set the width to 100% of the viewport */
   height: 3rem; /* Set the desired height of the background pattern */
-  background-image: url('src/images/background/banner.png');
+  background-image: url('/src/images/background/banner.png');
   background-repeat: repeat-x; /* Repeat the image horizontally */
   background-size: 30%;
 }
@@ -96,7 +96,8 @@ body{
   font-family: 'Inter', sans-serif;
   color: #6A956F;
   line-height: 3vh;
-  font-size: 2vh;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .about-1,
@@ -139,6 +140,13 @@ body{
   .about h1 {
     grid-column: span 1;
   }
+
+
+  .about p {
+    font-size: 1.5vh;
+    line-height: 2.2vh;
+  }
+
 
   /* .slideshow {
     position: relative;

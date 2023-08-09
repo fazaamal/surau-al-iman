@@ -5,8 +5,9 @@ body {
 .donate {
   height: 100%;
   /* background-color: tomato; */
-
+  width: var(--content-width);
   text-align: center;
+  margin: 0 auto;
 }
 
 .donate .grid-item h2{

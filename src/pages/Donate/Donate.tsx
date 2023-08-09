@@ -3,13 +3,14 @@ import './Donate.css'
 
 const Donate = () => {
   return ( 
-    <div className="donate">
-      <Banner text="MAKE A DONATION" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
+    <>
+      <Banner title="MAKE A DONATION" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
+      <div className="donate">
       {/* <h1>MAKE A DONATION</h1> */}
       <div className="grid-container">
         <div className="grid-item">
           <h2>QR</h2>
-          <img src="src/pages/Donate/images/QR.png" alt="" className="qr" />
+          <img src="/src/pages/Donate/images/QR.png" alt="" className="qr" />
         </div>
         <div className='grid-item'>
           <h1>OR</h1>
@@ -25,6 +26,8 @@ const Donate = () => {
         </div>
       </div>
     </div>
+
+    </>
   );
 }
  

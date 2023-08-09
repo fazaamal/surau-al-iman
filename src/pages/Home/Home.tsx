@@ -4,7 +4,7 @@ import { setProperties } from "../../utils";
 import './Home.css';
 
 const Home = () => {
-    const baseDir = './src/pages/Home/images/slideshow/';
+    const baseDir = '/src/pages/Home/images/slideshow/';
     let images = [
         'iftar.jpeg',
         '1.jpeg',
@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="about">
+            <div className="about center">
                 <Line style={{
                         top: "2rem",
                         width: '90%',
@@ -49,7 +49,7 @@ const Home = () => {
                 
 
                 <div className="about-1">
-                    <img className="about-picture" src="src/pages/Home/images/about/amir.jpg" alt="" />
+                    <img className="about-picture" src="/src/pages/Home/images/about/amir.jpg" alt="" />
                 </div>
                 <div className="about-2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor velit imperdiet nibh rutrum, vel consequat nibh dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta metus eget mauris rutrum facilisis. Quisque eget augue fermentum, pharetra quam ut, porttitor ligula. Ut id urna nec turpis condimentum aliquet. Donec ut mi a urna feugiat suscipit eget eu neque. In molestie ante volutpat, molestie felis eleifend, tristique eros. Fusce sit amet ex a mauris condimentum tinci</p>
