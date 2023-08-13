@@ -76,6 +76,9 @@ const Announcements = () => {
 
   return ( 
     <> 
+      {/* {
+        <Announcement announcement={announcements[0]} active={true} setChosen={setChosen}></Announcement>
+      } */}
       {
         announcements.length > 0 && chosen &&
         <Announcement announcement={chosen} active={chosen?true:false} setChosen={setChosen}></Announcement>

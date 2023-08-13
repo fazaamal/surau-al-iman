@@ -28,6 +28,7 @@ function App() {
                 <Route path='/announcements' element={ <Announcements/>}></Route>
               </Routes>
             )}
+
           </div>
           {/* <Footer/> */}
         </div>

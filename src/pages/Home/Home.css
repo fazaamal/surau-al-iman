@@ -139,6 +139,7 @@ body{
 
   .about h1 {
     grid-column: span 1;
+    font-size: 1.75rem;
   }
 
 
@@ -174,10 +175,6 @@ body{
   .about-1,
   .about-2 {
     padding: 0 1rem;
-  }
-
-  .about h1 {
-    grid-column: span 1;
   }
 }
 

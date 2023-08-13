@@ -42,7 +42,7 @@ events = [];
 const Events = () => {
   return ( 
     <>
-      <Banner title="CLASSES & EVENTS" imgPath="/src/pages/Events/images/banner.jpeg"></Banner>
+      <Banner title="WHATS ON" imgPath="/src/pages/Events/images/banner.jpeg"></Banner>
       <div className="events center">
         <h1>CLASSES</h1>
         <div className="grid-container">
