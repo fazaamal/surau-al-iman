@@ -1,10 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header, Footer} from './components';
-import { Donate, Events, Home, EventDetails } from './pages';
+import { Donate, Events, Home, EventDetails, Announcements } from './pages';
 import './App.css';
 import React, { useState } from 'react';
-import { constants } from './constants';
-import { setProperties } from './utils';
 
 function App() {
   const [isHeaderLoaded, setIsHeaderLoaded] = useState(false);
@@ -13,7 +11,7 @@ function App() {
     setIsHeaderLoaded(true);
   };
 
-  setProperties(constants, document);
+  // setProperties(constants, document);
 
   return (
     <>
@@ -27,10 +25,11 @@ function App() {
                 <Route path="/donate" element={<Donate />} />
                 <Route path='/events' element={ <Events />}> </Route>
                 <Route path='/events/:id' element={ <EventDetails />}/>
+                <Route path='/announcements' element={ <Announcements/>}></Route>
               </Routes>
             )}
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       </Router>
     </>

@@ -13,14 +13,12 @@ const Banner = ({imgPath, text, title, style}: {imgPath?:string, title?: string,
       <div className='banner-text' style={{
 
       }}>
-        <h1 style={{
-          fontSize: '3rem',
+        <h1 className='title' style={{
           fontWeight: 'bold',
           marginBottom: 0
         }
         }>{title}</h1>
-        <h1 style={{  
-          fontSize: '2rem',
+        <h1 className='subtitle' style={{  
           marginTop: 0
         }}>{text}</h1>
       </div>

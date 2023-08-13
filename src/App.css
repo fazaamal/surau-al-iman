@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500;600;700&display=swap');
+
+:root {
+  --large-gutter-margin: 2.5rem;
+  --medium-gutter-margin: 2rem;
+  --small-gutter-margin: 1rem;
+  --background-color: white;
+  --primary-color: #2F8739;
+  --content-width-large: min(90%,1200px);
+  --content-width-medium: min(90%, 800px);
+  --content-width-small: min(100%, 600px);
+}
+
 html {
   /* background-color: red; */
   background-image: url('/src/images/background/bg3.png');
   background-size: 50%;
   background-repeat: repeat;
-  /* background-attachment: fixed; */
-  /* opacity: 0.6; */
-  /* height: 100%; */
 }
 
 
@@ -40,12 +49,16 @@ h3 {
 }
 
 .center {
-  width: var(--content-width);
+  width: var(--content-width-large);
   margin: 0 auto;
 }
 
 .content {
   margin-bottom: 5rem;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,6 +73,10 @@ h3 {
   :root {
     background-size: 100%;
   }
+
+  .center {
+    width: var(--content-width-small);
+  }
 }
 
 /* Media query for screens with width between 601px and 1200px */
@@ -71,6 +88,10 @@ h3 {
   *{
     outline: 2px rgb(205, 50, 140) solid;
   }
+
+  .center{
+    width: var(--content-width-medium);
+  }
 }
 
 *{
@@ -78,5 +99,5 @@ h3 {
 }
 
 *{
-  outline: none; 
+  /* outline: none;  */
 }

@@ -30,7 +30,8 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
             </div>
 
             <div className="navigation">
-                <div className='links'>
+                <div className='links center'>
+                    <Link className='link' to={'/'}>HOME</Link>
                     <Link className='link' to={'/donate'}>DONATE</Link>
                     <Link className='link' to={'/events'}>WHATS ON</Link>
                     <Link className='link' to={'/announcements'}>ANNOUNCEMENTS</Link>

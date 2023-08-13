@@ -1,4 +1,4 @@
-type EventType = {
+interface EventType {
   title: string,
   time: string,
   id: number,
@@ -10,6 +10,15 @@ type EventType = {
   type: "event" | "class"
 };
 
+interface AnnouncementType {
+  title: string,
+  time: number,
+  id: number,
+  description: string,
+  imgPath?: string,
+}
+
 export type {
-  EventType
+  EventType,
+  AnnouncementType
 }

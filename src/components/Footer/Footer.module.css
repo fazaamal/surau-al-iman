@@ -1,0 +1,81 @@
+/* Footer container */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+  background-color: #2F8739;
+  color: white;
+}
+
+/* Newsletter section */
+.newsletter {
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 10px;
+}
+
+.newsletter input[type="email"] {
+  /* width: 100%; */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: white;
+}
+
+.newsletter button {
+  background-color: #f15a24;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #e53e0e;
+}
+
+/* Links section */
+.links {
+  padding: 20px;
+}
+
+.links h2 {
+  margin-bottom: 10px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  color: #f15a24;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links a:hover {
+  color: #e53e0e;
+}
+
+/* Contact section */
+.contact {
+  padding: 20px;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin: 5px 0;
+}

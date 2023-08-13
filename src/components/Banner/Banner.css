@@ -3,7 +3,7 @@
   /* height: 14rem; */
   height: min-content;
   position: relative;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   z-index: 0;
   /* filter: brightness(50%); */
 }
@@ -46,7 +46,7 @@
   left: 50%; */
   /* transform: translate(-50%, -50%); */
   text-align: center;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem;
   text-wrap: balance;
   z-index: 10;
   /* text-shadow: 5px 5px 5px black; */
@@ -60,3 +60,29 @@
   z-index: 100;
 }
 
+.banner-text .title {
+  font-size: 3rem;
+}
+
+.banner-text .subtitle {
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .banner-text{
+    padding: 1rem;
+  }
+
+  .banner-text .title {
+    font-size: 2rem;
+  }
+
+  .banner-text .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+}
