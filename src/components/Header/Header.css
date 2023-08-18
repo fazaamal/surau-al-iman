@@ -63,12 +63,14 @@
 }
 
 .social-media-icon {
-  position: absolute;
+  /* position: absolute;
   height: 1.6rem;
   width: auto;
   padding: 5px 5px;
   right: 0;
-  top: 0;
+  top: 0; */
+  height: 1.75rem;
+  padding: 0 0.25rem;
 }
 
 .overlay {
@@ -94,7 +96,11 @@
 
   .social-media-icon {
     position: static;
-    padding: 0;
+    /* padding: 0; */
+  }
+
+  .socials-container {
+    display: none;
   }
   
   .header #logo {

@@ -45,7 +45,10 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
     <>
       <div id='announcement-overlay' className={`${style['announcement-overlay']} ${active?'show':'hidden'}`}>
         <img onClick={()=>close()} src="/src/images/icons/close.svg" alt="" />
-        <div className={style['grid-container']}>
+        <div className={style['grid-container']} style={{
+          alignContent: announcement.imgPath?'start':'center',
+          alignItems: announcement.imgPath?'normal':'center',       
+        }}>
           {
             announcement.imgPath &&
               <div className={`${style['grid-item']} ${style['image-container']}`} style={{
@@ -55,7 +58,7 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
             </div>
           }
           <div className={`${style['grid-item']} ${style['description-container']}`} style={{
-            height: announcement.imgPath?'auto':'min-content'
+            height: announcement.imgPath?'auto':'min-content'     
           }}>
             <h1>{announcement.title}</h1>
             <p style={{margin:0, textAlign:'center', paddingBottom:'1rem', color:'grey'}} >Posted {`${(new Date(announcement.time)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} ${new Date(announcement.time).toLocaleDateString()}`}</p>

@@ -37,7 +37,7 @@ export let events: EventType[] = [
   }
 ]
 
-events = [];
+// events = [];
 
 const Events = () => {
   return ( 

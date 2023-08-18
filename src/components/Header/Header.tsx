@@ -24,8 +24,17 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
         <div className='header'>
 
             <div className="top-container">
+                <div className="logo-container">
                 <Link to={'/'}><img className='logo' src="/src/images/logo/Logo Transparent.png" alt="Surau Al-Iman Logo " id='logo'/></Link>
-                <img className='search-icon' src="/src/images/icons/search.svg" alt="" id='search-icon' />
+                </div>
+                <div className="socials-container">
+                    <Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/yt.svg" alt="" id='fb-icon'/></Link>
+                    <Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/fb.svg" alt="" id='fb-icon'/></Link>
+                    <Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/ig.svg" alt="" id='fb-icon'/></Link>
+                </div>
+
+                {/* <img className='search-icon' src="/src/images/icons/search.svg" alt="" id='search-icon' /> */}
+
                 <img className='menu-icon' src="/src/images/icons/menu.svg" alt="" id='search-icon' onClick={showSidebar}/>
             </div>
 
@@ -39,7 +48,6 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
                     <Link className='link' to={'/contact-us'}>CONTACT US</Link>
                 </div>
 
-                <Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/fb.svg" alt="" id='fb-icon'/></Link>
             </div>
 
             <div className='overlay' onClick={showSidebar} onScroll={showSidebar}></div>
@@ -54,17 +62,17 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
                     <li className='item'><Link className='link' onClick={showSidebar} to={'/'}>HOME</Link></li>
                     <li className='item'><Link className='link' onClick={showSidebar} to={'/donate'}>DONATE</Link></li>
                     <li className='item'><Link className='link' onClick={showSidebar} to={'/events'}>WHATS ON</Link></li>
-                    <li className='item'><Link className='link' onClick={showSidebar} to={'/announcements'}>ANNOUNCEMENTS</Link></li>
-                    <li className='item'><Link className='link' onClick={showSidebar} to={'/gallery'}>GALLERY</Link></li>
+                    <li className='item'><Link className='link' onClick={showSidebar} to={'/announcements'}>ANNOUNCEMENTS</Link>
+                    </li>
+                    {/* <li className='item'><Link className='link' onClick={showSidebar} to={'/gallery'}>GALLERY</Link></li> */}
                     <li className='item'><Link className='link' onClick={showSidebar} to={'/contact-us'}>CONTACT US</Link></li>
                     <li className='item' style={{
                         fontWeight: 'normal',
                         marginTop: '2rem',
                         marginBottom: '1.5rem'
                     }}>SOCIALS</li>
-                    <li className="item"><Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/fb.svg" alt="" id='fb-icon'/></Link></li>
-
-                    {/* <li className='item'><Link className='link' to="https://www.facebook.com/suraualimanpv8">FACEBOOK</Link></li> */}
+                    <li className="item"><Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/yt.svg" alt="" id='fb-icon'/></Link><Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/fb.svg" alt="" id='fb-icon'/></Link><Link to="https://www.facebook.com/suraualimanpv8" target='_blank'><img className='social-media-icon' src="/src/images/icons/ig.svg" alt="" id='fb-icon'/></Link></li>
+  {/* <li className='item'><Link className='link' to="https://www.facebook.com/suraualimanpv8">FACEBOOK</Link></li> */}
 
                 </ul>
 

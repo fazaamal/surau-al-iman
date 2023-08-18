@@ -4,7 +4,7 @@ import './Donate.css'
 const Donate = () => {
   return ( 
     <>
-      <Banner title="MAKE A DONATION" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
+      <Banner title="DONATE" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
       <div className="donate">
       {/* <h1>MAKE A DONATION</h1> */}
       <div className="grid-container">
