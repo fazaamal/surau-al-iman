@@ -1,15 +1,12 @@
-<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_158_92" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="33" height="33">
-<g clip-path="url(#clip0_158_92)">
-<path d="M32.9995 16.6011C32.9995 7.43118 25.6116 -0.0020752 16.4995 -0.0020752C7.38327 -1.26951e-05 -0.00460815 7.43118 -0.00460815 16.6031C-0.00460815 24.8882 6.03027 31.7563 13.9173 33.0021V21.4005H9.73039V16.6031H13.9214V12.9422C13.9214 8.78211 16.3861 6.48449 20.1543 6.48449C21.961 6.48449 23.8482 6.8083 23.8482 6.8083V10.8921H21.7671C19.7191 10.8921 19.0797 12.1729 19.0797 13.4867V16.6011H23.6543L22.9242 21.3984H19.0776V33C26.9646 31.7542 32.9995 24.8861 32.9995 16.6011Z" fill="black"/>
-</g>
-</mask>
-<g mask="url(#mask0_158_92)">
-<rect y="-6" width="39" height="48" fill="#2F8739"/>
-</g>
-<defs>
-<clipPath id="clip0_158_92">
-<rect width="33" height="33" fill="white"/>
-</clipPath>
-</defs>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#2F8739" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+<g id="SVGRepo_iconCarrier"> <path d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"/> </g>
+
 </svg>

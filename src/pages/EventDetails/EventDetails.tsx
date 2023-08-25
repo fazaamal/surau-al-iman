@@ -1,6 +1,5 @@
 import { Banner } from "../../components";
 import styles from './EventDetails.module.css'
-import { EventType } from "../../types";
 import { useParams } from "react-router-dom";
 import { events } from "../Events/Events";
 
@@ -9,7 +8,7 @@ const EventDetails = () => {
   if(!id){
     return <h1>404</h1>
   }
-  const event = events.find(event => event.id === parseInt(id))!;
+  const event = events.find(event => event.id === id)!;
   if(!event){
     return <h1>404</h1>
   }

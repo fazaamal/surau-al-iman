@@ -6,7 +6,7 @@
 
 .header {
   z-index: 100;  
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
   padding-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-family: 'Raleway', sans-serif;
@@ -46,8 +46,18 @@
   /* margin: auto 0; */
   /* padding: 0 5%;  */
   font-size: 1rem;
+
+  /* display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column; */
   /* border-top: rgb(188, 188, 188) 1px solid; */
 }
+
+/* .links a {
+  width: 10px;
+  text-align: right;
+} */
 
 .link:hover{
   text-decoration: underline;
@@ -70,7 +80,8 @@
   right: 0;
   top: 0; */
   height: 1.75rem;
-  padding: 0 0.25rem;
+  /* padding: 0 0.25rem; */
+  padding-left: 0.25rem;
 }
 
 .overlay {
@@ -85,9 +96,9 @@
     width: 100%
   } */
   .header {
-    padding: 0 0.5rem;
-    padding-top: 0.5rem;
-    margin-bottom: 0.2rem;
+    /* padding: 0 0.5rem; */
+    margin: 0.5rem 0;
+    padding: 0;
   }
 
   .search-icon {  
@@ -114,7 +125,8 @@
 
   .top-container{
     margin-bottom: 0; 
-    padding: 0 0.5rem;
+    /* padding: 0 0.5rem;/ */
+
   }
 
   .navigation {

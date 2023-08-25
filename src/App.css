@@ -8,7 +8,23 @@
   --primary-color: #2F8739;
   --content-width-large: min(90%,1200px);
   --content-width-medium: min(90%, 800px);
-  --content-width-small: min(95%, 600px);
+  --content-width-small: min(92%, 600px);
+
+  --base-font-size: 16px; /* Define your base font size */
+  --heading-scale: 1.5;   /* Scale factor for headings */
+
+  --font-size-xs: calc(var(--base-font-size) * 0.75); /* Extra small */
+  --font-size-sm: calc(var(--base-font-size) * 0.875); /* Small */
+  --font-size-md: var(--base-font-size); /* Medium (base font size) */
+  --font-size-lg: calc(var(--base-font-size) * 1.125); /* Large */
+  --font-size-xl: calc(var(--base-font-size) * 1.25); /* Extra large */
+
+  --font-size-h1: calc(var(--base-font-size) * var(--heading-scale) * 2.5); /* Adjust heading font sizes */
+  --font-size-h2: calc(var(--base-font-size) * var(--heading-scale) * 2);
+  --font-size-h3: calc(var(--base-font-size) * var(--heading-scale) * 1.75);
+  --font-size-h4: calc(var(--base-font-size) * var(--heading-scale) * 1.5);
+  --font-size-h5: calc(var(--base-font-size) * var(--heading-scale) * 1.25);
+  --font-size-h6: calc(var(--base-font-size) * var(--heading-scale));
 }
 
 html {
@@ -50,15 +66,23 @@ h3 {
 
 .center {
   width: var(--content-width-large);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.content {
-  /* margin-bottom: 5rem; */
+.App {
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hidden {
   display: none;
+}
+
+.content > :last-child {
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 600px) {

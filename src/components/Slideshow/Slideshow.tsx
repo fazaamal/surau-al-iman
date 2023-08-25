@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Slideshow.css'; // Import the CSS file for slideshow styles
 
 const Slideshow = ({ images, style }: { images: string[], style?: Object }) => {

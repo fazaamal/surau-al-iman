@@ -23,7 +23,7 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
     return ( 
         <div className='header'>
 
-            <div className="top-container">
+            <div className="top-container center">
                 <div className="logo-container">
                 <Link to={'/'}><img className='logo' src="/src/images/logo/Logo Transparent.png" alt="Surau Al-Iman Logo " id='logo'/></Link>
                 </div>
@@ -40,7 +40,7 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
 
             <div className="navigation">
                 <div className='links center'>
-                    <Link className='link' to={'/'}>HOME</Link>
+                    {/* <Link className='link' to={'/'}>HOME</Link> */}
                     <Link className='link' to={'/donate'}>DONATE</Link>
                     <Link className='link' to={'/events'}>WHATS ON</Link>
                     <Link className='link' to={'/announcements'}>ANNOUNCEMENTS</Link>

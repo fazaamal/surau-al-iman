@@ -1,7 +1,7 @@
 import "./Events.css";
 import { Banner } from "../../components";
 import { Link } from "react-router-dom";
-import { EventType } from "../../types";
+import { EventType }  from "al-iman-types";
 
 export let events: EventType[] = [
   {
@@ -12,7 +12,7 @@ export let events: EventType[] = [
     location: "Surau Al-Iman",
     conductor: "Sheikh Fuad",
     type: "class",
-    id: 1
+    id: "1"
   },
   {
     title: "Tahfiz Class",
@@ -22,7 +22,7 @@ export let events: EventType[] = [
     location: "The Institute",
     conductor: "Sayeed Amir",
     type: "class",
-    id: 2
+    id: "2"
   },
   {
     title: "Futsal Tournament",
@@ -33,7 +33,7 @@ export let events: EventType[] = [
     conductor: 'Daniel',
     contact: "Daniel - 012-3456789",
     type: "event",
-    id: 3
+    id: "3"
   }
 ]
 

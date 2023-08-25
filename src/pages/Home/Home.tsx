@@ -1,6 +1,4 @@
-import { Slideshow, Line } from "../../components";
-import { constants } from "../../constants";
-import { setProperties } from "../../utils";
+import { Slideshow} from "../../components";
 import './Home.css';
 
 const Home = () => {
@@ -8,7 +6,7 @@ const Home = () => {
     let images = [
         'iftar.jpeg',
         '1.jpeg',
-        '2.png',
+        // '2.png',
         '3.jpeg',
     ]
     let imagePaths = images.map((image:string): string => baseDir + image)
@@ -39,12 +37,12 @@ const Home = () => {
             </div>
 
             <div className="about center">
-                <Line style={{
+                {/* <Line style={{
                         top: "2rem",
                         width: '90%',
                         left: '50%',
                         transform: 'translateX(-50%)'
-                    }}/>
+                    }}/> */}
                 <h1>ABOUT SURAU AL-IMAN</h1>
                 
 
@@ -55,12 +53,30 @@ const Home = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor velit imperdiet nibh rutrum, vel consequat nibh dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta metus eget mauris rutrum facilisis. Quisque eget augue fermentum, pharetra quam ut, porttitor ligula. Ut id urna nec turpis condimentum aliquet. Donec ut mi a urna feugiat suscipit eget eu neque. In molestie ante volutpat, molestie felis eleifend, tristique eros. Fusce sit amet ex a mauris condimentum tinci</p>
                 </div>
 
-                <Line style={{
-                    bottom: "2rem",
+                {/* <Line style={{
+                    // bottom: "2rem",
                     width: '90%',
                     left: '50%',
                     transform: 'translateX(-50%)'
-                }}/>
+                }}/> */}
+            </div>
+
+            <div className="location-container center">
+                <h1>OUR LOCATION</h1>
+                <p style={{
+                    textAlign: 'center',
+                }}>We are situated at the ground floor of the PV8 condominium.</p>
+                            <iframe
+                // width="600"
+                // height="450"
+                style={{"border":"0"}}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBhPhyRynHm41oSEiC6pQ6GBPrXysDwkJE
+                    &q=PV8, Kuala+Lumpur">
+            </iframe>
+
             </div>
 
             {/* <div className="separator"></div> */}

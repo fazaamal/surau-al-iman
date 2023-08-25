@@ -10,15 +10,15 @@ const Banner = ({imgPath, text, title, style}: {imgPath?:string, title?: string,
       ...style
     }}>
       <div className='banner-overlay'></div>
-      <div className='banner-text' style={{
+      <div className='banner-text center' style={{
         zIndex:1000
       }}>
-        <h1 className='title center' style={{
+        <h1 className='title' style={{
           fontWeight: 'bold',
           marginBottom: 0
         }
         }>{title}</h1>
-        <h1 className='subtitle center' style={{  
+        <h1 className='subtitle' style={{  
           marginTop: 0
         }}>{text}</h1>
       </div>

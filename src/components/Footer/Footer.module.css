@@ -1,81 +1,49 @@
 /* Footer container */
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 40px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* padding: 40px; */
+  height: 300px;
   background-color: #2F8739;
   color: white;
+  position: relative;
+  width: calc(100% + 2 * var(--large-gutter-margin, 2.5rem));
+  left:calc( -1 * var(--large-gutter-margin, 2.5rem));
 }
 
-/* Newsletter section */
-.newsletter {
-  padding: 20px;
+
+.grid-container {
+  /* background-color: greenyellow; */
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+
+.grid-item {
+  /* outline: #2F8739 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
-.newsletter h2 {
-  margin-bottom: 10px;
-}
-
-.newsletter input[type="email"] {
-  /* width: 100%; */
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #fff;
-  background-color: transparent;
+.grid-item h2 {
   color: white;
+  font-weight: 400; 
+  font-family: 'Inter', sans-serif;
 }
 
-.newsletter button {
-  background-color: #f15a24;
-  color: white;
-  border: none;
-  padding: 8px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+@media screen and (max-width: 600px) {
+  .footer {
+    width: calc(100% + 2 * var(--small-gutter-margin, 2.5rem));
+    left:calc( -1 * var(--small-gutter-margin, 2.5rem));
+    height: 250px;
+  }
 }
 
-.newsletter button:hover {
-  background-color: #e53e0e;
-}
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .footer {
+    width: calc(100% + 2 * var(--medium-gutter-margin, 2.5rem));
+    left:calc( -1 * var(--medium-gutter-margin, 2.5rem));
+    }
 
-/* Links section */
-.links {
-  padding: 20px;
-}
-
-.links h2 {
-  margin-bottom: 10px;
-}
-
-.links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.links li {
-  margin-bottom: 5px;
-}
-
-.links a {
-  color: #f15a24;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.links a:hover {
-  color: #e53e0e;
-}
-
-/* Contact section */
-.contact {
-  padding: 20px;
-}
-
-.contact h2 {
-  margin-bottom: 10px;
-}
-
-.contact p {
-  margin: 5px 0;
 }

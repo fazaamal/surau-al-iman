@@ -5,7 +5,7 @@ const Donate = () => {
   return ( 
     <>
       <Banner title="DONATE" imgPath="src/pages/Donate/images/banner.jpeg"></Banner>
-      <div className="donate">
+      <div className="donate center">
       {/* <h1>MAKE A DONATION</h1> */}
       <div className="grid-container">
         <div className="grid-item">
@@ -17,12 +17,14 @@ const Donate = () => {
         </div>
         <div className="grid-item">
           <h2>BANK TRANSFER</h2>
-          <h3>Bank</h3>
-          <p>Bank Islam</p>
-          <h3>Name</h3>
-          <p>Surau Al-Iman</p>
-          <h3>Account Number</h3>
-          <p>12113010051540</p>
+          <div className="details">
+            <h3>Bank</h3>
+            <p>Bank Islam</p>
+            <h3>Name</h3>
+            <p>Surau Al-Iman</p>
+            <h3>Account Number</h3>
+            <p>12113010051540</p>
+          </div>
         </div>
       </div>
     </div>

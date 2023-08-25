@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Banner, Announcement } from '../../components';
-import { AnnouncementType } from '../../types';
+import { AnnouncementType } from 'al-iman-types';
 import style from './Announcements.module.css';
 
 let announcements: AnnouncementType[] = [
@@ -9,56 +9,20 @@ let announcements: AnnouncementType[] = [
     imgPath: '/src/pages/Announcements/images/flood.webp',
     description: 'Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MOREShort description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MOREShort description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MOREShort description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MOREShort description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MOREShort description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MORE',
     time: Date.now(),
-    id: 1
+    id: "1"
   },
   {
     title: 'monthly surau cleaning',
     imgPath: '/src/pages/Announcements/images/poster.jpg',
     description: 'This is the first announcement',
     time: Date.now()-100000,
-    id: 2
+    id: "2"
   },
   {
     title: 'tafseer cancelled',
     description: 'This is the first announcement',
     time: Date.now()-200000,
-    id: 3
-  },
-  {
-    title: 'Flood victim fundraiser',
-    description: 'Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MORE',
-    time: Date.now(),
-    id: 1
-  },
-  {
-    title: 'monthly surau cleaning',
-    description: 'This is the first announcement',
-    time: Date.now()-100000,
-    id: 2
-  },
-  {
-    title: 'tafseer cancelled',
-    description: 'This is the first announcement',
-    time: Date.now()-200000,
-    id: 3
-  },
-  {
-    title: 'Flood victim fundraiser',
-    description: 'Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short description blah balha odiuyfb aisyfhjhjkyooif oiudoh iudfh kaiosu short description.Short ... READ MORE',
-    time: Date.now(),
-    id: 1
-  },
-  {
-    title: 'monthly surau cleaning',
-    description: 'This is the first announcement',
-    time: Date.now()-100000,
-    id: 2
-  },
-  {
-    title: 'tafseer cancelled',
-    description: 'This is the first announcement',
-    time: Date.now()-200000,
-    id: 3
+    id: "3"
   }
 ]
 
