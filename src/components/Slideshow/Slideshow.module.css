@@ -1,0 +1,78 @@
+/* Slideshow component styles */
+.slideshow {
+  /* //add gradient fade at the top  */
+  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517245386807-9b4d0d6f9d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); */
+
+  position: relative;
+  bottom: 0;
+  min-height: 700px;
+  overflow: hidden;
+  background-color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.slideshow::before {
+  /* display: none; */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust the height of the gradient to control the focus */
+  /* background: linear-gradient(120deg, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+  background-color: rgba(0, 0, 0, 0.2); */
+  background: linear-gradient( rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  /* Adjust the alpha (opacity) value of the second color to control the fade effect */
+  background-size: 100% 100%; /* Set the background size to control the gradient height */
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  /* align-items: center; */
+  /* bottom: 0; */
+  /* transform: translateY(50%); */
+  z-index: -1;
+}
+
+.slide.visible {
+  opacity: 1;
+}
+
+.buttons{
+  width: 100%;
+
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+/* Navigation buttons styles */
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  /* left: 0; */
+  transform: translateY(-50%);
+  font-size: 10rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+  height: 100%;
+  width: 50%
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+  /* width: 4rem; */
+}

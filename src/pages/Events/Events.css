@@ -8,35 +8,50 @@
 
 .events h1 {
   text-align: left;
+  margin-bottom: 0.5rem;
 }
 
 .events .grid-container {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 32% 32% 32%;
   grid-auto-rows: auto;
   justify-content: space-between;
 }
 
+.events .grid-item  {
+  overflow:visible;
+  position: relative;
+  width: 100%;
+}
+
 .events .image-container {
   width: 100%;
-  height: 200px;
+  padding-bottom: 66.68%;
+  position: relative;
+  /* top:0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(214, 224, 214);
 }
 
 .events img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  /* max-width: 300px; */
-}
-
-.events .grid-item  {
-  overflow:visible;
+  /* position: absolute; */
+  object-fit: contain;
+  position: absolute;
+  /* background-color: aqua; */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .events h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 0.5rem;
 }
 
@@ -48,11 +63,11 @@
   text-decoration: var(--primary-color, green) underline ;
 }
 
-.events .image-container img {
+.events .image-container {
   transition: transform 0.3s ease; /* Add a smooth transition on hover */
 }
 
-.events a:hover img {
+.events .image-container:hover {
   transform: scale(1.1); /* Increase the scale to zoom in (1.1 means 10% zoom) */
 }
 
@@ -66,20 +81,20 @@
   }
 
   .events > h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     /* padding: 0 1rem; */
   }
 
-  .events > h2 {
-    font-size: 1.25rem;
-    padding: 0 1rem;
+  .events h2 {
+    font-size: 1.5rem;
+
   }
 }
 
 /* Media query for screens with width between 601px and 1200px */
 @media screen and (min-width: 601px) and (max-width:  900px) {
   .events .grid-container {
-    grid-template-columns:  45% 45%;
+    grid-template-columns:  48% 48%;
   }
 
   .events {

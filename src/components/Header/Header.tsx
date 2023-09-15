@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import { useEffect } from 'react';
 
-const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
-    useEffect(() => {
-        setTimeout(() => {
-          onHeaderLoad(); // Call the onHeaderLoad function when the header has loaded
-        }, 0); // Simulating a 2-second loading time
-      }, [onHeaderLoad]);
+const Header = () => {
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //       onHeaderLoad(); // Call the onHeaderLoad function when the header has loaded
+    //     }, 0); // Simulating a 2-second loading time
+    //   }, [onHeaderLoad]);
 
 
     const showSidebar = () => {
@@ -41,11 +41,12 @@ const Header = ({onHeaderLoad}: {onHeaderLoad: Function}) => {
             <div className="navigation">
                 <div className='links center'>
                     {/* <Link className='link' to={'/'}>HOME</Link> */}
-                    <Link className='link' to={'/donate'}>DONATE</Link>
                     <Link className='link' to={'/events'}>WHATS ON</Link>
                     <Link className='link' to={'/announcements'}>ANNOUNCEMENTS</Link>
+                    <Link className='link' to={'/about-us'}>ABOUT US</Link>
                     {/* <Link className='link' to={'/gallery'}>GALLERY</Link> */}
-                    <Link className='link' to={'/contact-us'}>CONTACT US</Link>
+                    <Link className='link' to={'/donate'}>DONATE</Link>
+                    <Link className='link' to={'/contact-us'}>OUR CONTACTS</Link>
                 </div>
 
             </div>

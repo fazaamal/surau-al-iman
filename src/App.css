@@ -48,19 +48,19 @@ body {
   outline: #2F8739 2px solid;
 }
 h1 {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: bold;
   color: #2F8739;
   text-align: center;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   color: #2F8739;
 }
 
 h3 {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   color: #2F8739;
 }
 
@@ -82,7 +82,7 @@ h3 {
 }
 
 .content > :last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 9rem;
 }
 
 @media screen and (max-width: 600px) {

@@ -9,7 +9,7 @@ const Banner = ({imgPath, text, title, style}: {imgPath?:string, title?: string,
       backgroundSize: 'cover',
       ...style
     }}>
-      <div className='banner-overlay'></div>
+      <div className='banner-overlay' style={{backdropFilter:''}}></div>
       <div className='banner-text center' style={{
         zIndex:1000
       }}>

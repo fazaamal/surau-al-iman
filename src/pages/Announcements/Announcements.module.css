@@ -3,7 +3,7 @@
 }
 
 .announcement{
-  height: 80px;
+  /* height: 80px; */
   padding: 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -39,7 +39,7 @@
 .announcement h1 {
   text-align: left;
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .announcements .announcement:nth-child(odd) {

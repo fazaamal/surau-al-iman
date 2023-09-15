@@ -3,8 +3,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-  width: calc(100% - 2 * 4rem);
-  height: calc(100% - 2 * 4rem);
+  width: calc(100%);
+  height: calc(100%);
   padding: 4rem;
   z-index: 1000;
   
@@ -25,12 +25,15 @@
 
   display: grid;
   grid-auto-columns: 50%;
+  grid-auto-rows: 100%;
   grid-auto-flow: column;
   justify-content: center;
+  align-items: center;
+  /* justify-items: center; */
   max-width: 1000px;
   max-height: 450px;
   gap: 10px;
-}
+} 
 
 .grid-item img {
   width: 100%;
@@ -38,6 +41,8 @@
   object-fit: contain;
 
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* background-color: aqua; */
 }
 
 .announcement-overlay > img {
@@ -53,7 +58,7 @@
 
 h1 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .image-container{
@@ -71,8 +76,8 @@ h1 {
 
 @media screen and (max-width: 900px) and (orientation: portrait) {
   .announcement-overlay {
-    width: calc(100% - 2 * 2rem);
-    height: calc(100% - 2 * 4rem);
+    width: calc(100%);
+    height: calc(100%);
     padding: 4rem 2rem;
   }
 

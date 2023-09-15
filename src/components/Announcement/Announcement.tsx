@@ -1,6 +1,5 @@
 import style from './Announcement.module.css';
-import { AnnouncementType } from '../../types';
-
+import { AnnouncementType } from 'al-iman-types';
 
 // const Announcement = ({announcement}: {announcement: AnnouncementType}) => {
 //   return ( 
@@ -52,7 +51,11 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
           {
             announcement.imgPath &&
               <div className={`${style['grid-item']} ${style['image-container']}`} style={{
-                backgroundImage: `url(${announcement.imgPath})`
+                backgroundImage: `url(${announcement.imgPath})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                height: '100%',
               }}>
               <img src={announcement.imgPath} alt="" />
             </div>
@@ -61,11 +64,15 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
             height: announcement.imgPath?'auto':'min-content'     
           }}>
             <h1>{announcement.title}</h1>
-            <p style={{margin:0, textAlign:'center', paddingBottom:'1rem', color:'grey'}} >Posted {`${(new Date(announcement.time)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} ${new Date(announcement.time).toLocaleDateString()}`}</p>
-            <p style={{
-              margin: 0,
-              textAlign: 'justify',
-            }}>{announcement.description}</p>
+            <p style={{margin:0, textAlign:'center', paddingBottom:'1rem', color:'grey'}} >Posted {`${(new Date(announcement.timeAdded)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} ${new Date(announcement.timeAdded).toLocaleDateString()}`}</p>
+            {
+              announcement.description.split('\n').map((paragraph, index) => {
+                return <p key={index} style={{
+                  textAlign: 'justify',
+                  margin: '0 0 1rem 0',
+                }}>{paragraph}</p>
+              })
+            }
           </div>
         </div>
       </div>

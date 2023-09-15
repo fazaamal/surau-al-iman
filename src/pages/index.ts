@@ -1,3 +1,4 @@
+import AboutUs from "./AboutUs/AboutUs";
 import Announcements from "./Announcements/Announcements";
 import ContactUs from "./ContactUs/ContactUs";
 import Donate from "./Donate/Donate";
@@ -11,5 +12,6 @@ export {
   Events,
   EventDetails,
   Announcements, 
-  ContactUs
+  ContactUs,
+  AboutUs
 }

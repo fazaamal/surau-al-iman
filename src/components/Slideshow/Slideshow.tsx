@@ -1,7 +1,13 @@
 import { useState, useEffect } from 'react';
-import './Slideshow.css'; // Import the CSS file for slideshow styles
+import style from './Slideshow.module.css';
 
-const Slideshow = ({ images, style }: { images: string[], style?: Object }) => {
+interface Slide {
+  imgPath: string;
+  title?: string;
+  description?: string;
+}
+
+const Slideshow = ({ images, styles }: { images: string[], styles?: Object }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -27,24 +33,26 @@ const Slideshow = ({ images, style }: { images: string[], style?: Object }) => {
   };
 
   return (
-    <div className="slideshow" style={style}>
+    <div className={style['slideshow']} style={styles}>
+      <h1 style={{color:'white'}}>Testing 123</h1>
+      <h3 style={{color:'white'}}>Description 123</h3>
       {images.map((image, index) => (
         <img
           key={index}
           src={image}
           alt={`Slide ${index + 1}`}
-          className={`slide ${index === currentImageIndex ? 'visible' : ''}`}
+          className={`${style['slide']} ${index === currentImageIndex ? style['visible'] : ''}`}
         />
       ))}
 
-      <div className="buttons">
-        <button onClick={goToPrevSlide} className="prevButton" 
+      <div className={style['buttons']}>
+        <button onClick={goToPrevSlide} className={style['prevButton']} 
         style={
           images.length === 1 ?{
           display: 'none'
         }: {}
         }/>
-        <button onClick={goToNextSlide} className="nextButton" 
+        <button onClick={goToNextSlide} className={style['nextButton']} 
         style={
           images.length === 1 ?{
           display: 'none'
