@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://al-iman-api.onrender.com';
+
 
 async function callApi(endpoint:RequestInfo, options?:RequestInit) {
   // once deployed add credentials: 'include' to options

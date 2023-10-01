@@ -1,6 +1,7 @@
 import { useState , useEffect} from 'react';
 
-const baseUrl = 'http://localhost:3000';
+// const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://al-iman-api.onrender.com';
 
 // @ts-ignore
 interface useFetchType {
