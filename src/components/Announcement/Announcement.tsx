@@ -1,5 +1,8 @@
+import { formatEpochTime } from '../../utils';
 import style from './Announcement.module.css';
 import { AnnouncementType } from 'al-iman-types';
+import { Text } from '@mantine/core';
+import crossUrl from '../../images/icons/close.svg';
 
 // const Announcement = ({announcement}: {announcement: AnnouncementType}) => {
 //   return ( 
@@ -43,7 +46,7 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
   return ( 
     <>
       <div id='announcement-overlay' className={`${style['announcement-overlay']} ${active?'show':'hidden'}`}>
-        <img onClick={()=>close()} src="/src/images/icons/close.svg" alt="" />
+        <img onClick={()=>close()} src={crossUrl} alt="" />
         <div className={style['grid-container']} style={{
           alignContent: announcement.imgPath?'start':'center',
           alignItems: announcement.imgPath?'normal':'center',       
@@ -64,7 +67,7 @@ const Announcement = ({announcement, active, setChosen}: {announcement: Announce
             height: announcement.imgPath?'auto':'min-content'     
           }}>
             <h1>{announcement.title}</h1>
-            <p style={{margin:0, textAlign:'center', paddingBottom:'1rem', color:'grey'}} >Posted {`${(new Date(announcement.timeAdded)).toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} ${new Date(announcement.timeAdded).toLocaleDateString()}`}</p>
+            <Text color='dimmed' size={'sm'} style={{margin:0, textAlign:'center', paddingBottom:'1rem'}} >Posted {formatEpochTime(announcement.timeAdded)}</Text>
             {
               announcement.description.split('\n').map((paragraph, index) => {
                 return <p key={index} style={{

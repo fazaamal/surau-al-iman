@@ -6,7 +6,9 @@
   /* height: 80px; */
   padding: 1rem 0;
   display: flex;
+  /* justify-content: space-around; */
   justify-content: space-between;
+  
   /* grid-template-columns: 0.4fr 0.4fr 0.2fr; */
   gap: 1rem;
   border-bottom: rgb(207, 207, 207) solid 1px;
@@ -18,6 +20,11 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.announcement .grid-item:nth-child(2) {  
+  /* width: min-content; */
+}
+
 
 .announcement h1,
 .announcement p {
@@ -52,8 +59,11 @@
 
 @media screen and (max-width: 600px) {
   .announcement {
-    grid-template-columns: 0.5fr 0.3fr 0.2fr;
+    /* grid-template-columns: 0.5fr 0.3fr 0.2fr; */
+    gap: 0;
   }
+
+
 
   .announcement h1 {
     /* font-size: 1.25rem; */

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import style from './ImageFrame.module.css';
 
-const ImageFrame = ({imgPath, ratio, styles, objectFit='contain'}: {imgPath: string, ratio:number, styles?: React.CSSProperties, objectFit?: 'cover'|'contain'}) => {
+const ImageFrame = ({imgPath, ratio, styles,className, backgroundImage, objectFit='contain'}: {className?:string,imgPath: string, ratio:number, backgroundImage?:boolean, styles?: React.CSSProperties, objectFit?: 'cover'|'contain'}) => {
   const [isMobile, setIsMobile] = useState(false);
 
   // Define a media query
@@ -25,8 +25,8 @@ const ImageFrame = ({imgPath, ratio, styles, objectFit='contain'}: {imgPath: str
   }, []);
   return ( 
     <> 
-      <div className={style['image-container']} style={{paddingBottom: isMobile?`${1*100}%`:`${ratio*100}%`, ...styles}}>
-        <img src={imgPath} alt="" style={{margin: 0, objectFit}} />
+      <div className={`${style['image-container']} ${className}`} style={{paddingBottom: isMobile?`${3/4*100}%`:`${ratio*100}%`, backgroundImage: backgroundImage? `url(${imgPath})`:'', ...styles}}>
+        <img src={imgPath} alt="" style={{margin: 0, objectFit, backdropFilter: backgroundImage?'blur(10px)':'', WebkitBackdropFilter:backgroundImage?'blur(10px':''}} />
       </div>
     </> 
   );

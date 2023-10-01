@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import style from './Slideshow.module.css';
 
+// @ts-ignore
 interface Slide {
   imgPath: string;
   title?: string;

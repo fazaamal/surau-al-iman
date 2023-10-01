@@ -52,7 +52,7 @@
   position: relative;
 }
 
-.events::after {
+.card:last-of-type::after {
   position: absolute;
   content: '';
   width: 100%;
@@ -60,10 +60,20 @@
   bottom: 0;
   left: 0;
   z-index: 11;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8),  rgba(255, 255, 255, 0));
+}
+
+.card:last-of-type { 
+  box-shadow: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 @media screen and (max-width: 600px) {
+  .card-description {
+    display: none;
+  }
 }
 
 /* Media query for screens with width between 601px and 1200px */
@@ -74,6 +84,7 @@
   * {
     /* background-color: aqua; */
   }
+
 
   .slide {
     /* outline: green solid 1px; */

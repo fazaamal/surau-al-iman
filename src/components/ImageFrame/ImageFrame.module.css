@@ -2,6 +2,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(226, 249, 226);
 }
 
 .image-container img{

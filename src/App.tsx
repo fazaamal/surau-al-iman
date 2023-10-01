@@ -3,22 +3,30 @@ import { Header, Footer} from './components';
 import { Donate, Events, Home, EventDetails, Announcements, ContactUs, AboutUs } from './pages';
 import './App.css';
 import { MantineProvider } from '@mantine/core';
-import { ThemeProvider } from '@emotion/react';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
 
 function App() {
-
+  
   return (
     <>
     <QueryClientProvider client={queryClient}>
       <MantineProvider theme={{
+        globalStyles() {
+          return {
+            p: {
+              fontFamily: 'PT Sans, sans-serif',
+              fontWeight: 400,
+            }
+          }
+        },
         breakpoints: {
-          xs: '0px',
-          sm: "600px",
+          xs: '100px',
+          sm: '600px',
           md: '900px'
-        }
+        },
+        fontFamily: 'Nunito, sans-serif',
       }} withCSSVariables withGlobalStyles={true} withNormalizeCSS= {false}>
         <Router>
           <div className="App">

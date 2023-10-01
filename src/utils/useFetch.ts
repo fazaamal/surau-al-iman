@@ -2,6 +2,7 @@ import { useState , useEffect} from 'react';
 
 const baseUrl = 'http://localhost:3000';
 
+// @ts-ignore
 interface useFetchType {
   data: Record<string, unknown>| null ,
   isPending: boolean,
@@ -9,7 +10,7 @@ interface useFetchType {
   error?: string | null
 }
 
-const useFetch = (endpoint: string, options?: RequestInit) => {
+const useFetch = (endpoint: string, options?: RequestInit, delay:number=0) => {
   const [data, setData] = useState<Record<string, unknown>|null>(null); 
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -21,9 +22,11 @@ const useFetch = (endpoint: string, options?: RequestInit) => {
       if(!res.ok) throw Error('Could not fetch data');
       return res.json()
     }).then(data=>{
-      setData(data)
-      setIsLoading(false)
-      setError(null)
+      setTimeout(() => {
+        setData(data)
+        setIsLoading(false)
+        setError(null)
+      }, delay);
     }).catch(err=>{
       if(err.name === 'AbortError'){
         console.log('fetch aborted');

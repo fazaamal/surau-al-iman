@@ -63,12 +63,13 @@
 }
 
 .banner-text .title {
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-weight: 700;
   /* margin: 0; */
 }
 
 .banner-text .subtitle {
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 
