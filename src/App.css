@@ -32,6 +32,7 @@ html {
   background-image: url('/src/images/background/bg3.png');
   background-size: 50%;
   background-repeat: repeat;
+  scroll-behavior: smooth;
 }
 
 
