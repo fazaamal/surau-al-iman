@@ -93,7 +93,7 @@ const Events = () => {
 
         {
             !isLoading && !error &&
-            events.filter(event => event.type === "class").length === 0 && <h2 style={
+            events.filter(event => event.type === "event").length === 0 && <h2 style={
               {
                 textAlign: "center"
               }

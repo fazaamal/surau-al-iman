@@ -1,5 +1,5 @@
-const base_url = "http://localhost:3000";
+const BASE_URL = "https://al-iman-express-r3z3fw4moa-de.a.run.app";
 
 export {
-  base_url
+  BASE_URL
 }

@@ -1,7 +1,5 @@
 import { useState , useEffect} from 'react';
-
-// const baseUrl = 'http://localhost:3000';
-const baseUrl = 'https://al-iman-express-r3z3fw4moa-de.a.run.app';
+import { BASE_URL } from '../globals';
 
 // @ts-ignore
 interface useFetchType {
@@ -19,7 +17,7 @@ const useFetch = (endpoint: string, options?: RequestInit, delay:number=0) => {
   useEffect(()=>{
     const abortCont = new AbortController();
 
-    fetch(baseUrl+endpoint, {...options, signal: abortCont.signal}).then(res=>{
+    fetch(BASE_URL+endpoint, {...options, signal: abortCont.signal}).then(res=>{
       if(!res.ok) throw Error('Could not fetch data');
       return res.json()
     }).then(data=>{

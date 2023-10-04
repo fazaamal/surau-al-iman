@@ -17,7 +17,6 @@ const EventDetails = () => {
   
   useEffect(()=>{
     callApi(`/events/${id}`).then(res => {
-      
       setEvent(res.data);
       setLoading(false);
     }).catch((err)=>{

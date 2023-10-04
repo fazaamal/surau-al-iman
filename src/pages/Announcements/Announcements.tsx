@@ -83,15 +83,15 @@ const Announcements = () => {
           ))
         }
 
-        {/* {
+        {
           !isLoading &&
           announcements.length === 0 && 
           <>
-            <h2 style={{textAlign: 'center', fontWeight:400}}>No announcements</h2>
+            <h2 className={'text-center font-medium mt-2'}>No announcements</h2>
           </>
-        } */}
+        }
         {
-          (isLoading || announcements.length === 0) &&
+          (isLoading) &&
           <>
             <AnnouncementLoadingCard/>
             <AnnouncementLoadingCard/>
