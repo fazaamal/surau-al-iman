@@ -19,7 +19,7 @@ const AboutUs = () => {
             <div className={style['grid-item']}>
                 <h1>OUR LOCATION</h1>
                 <p style={{
-                    textAlign: 'center',
+                    textAlign: 'justify',
                 }}>We are situated at the ground floor of the PV8 condominium, near the Block B lobby.</p>
             </div>
             <div className={style['grid-item']} style={{

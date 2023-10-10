@@ -14,8 +14,7 @@ const Banner = ({imgPath, text, title, style, blur=false}: {imgPath?:string, tit
       <div className='banner-text center' style={{
         zIndex:1000
       }}>
-        <h1 className='title font-bold text-4xl' style={{
-          // fontWeight: 'bold',
+        <h1 className='title font-bold sm:text-4xl' style={{
           marginBottom: 0
         }
         }>{title}</h1>
@@ -27,8 +26,7 @@ const Banner = ({imgPath, text, title, style, blur=false}: {imgPath?:string, tit
 
         }}>{text}</h2>
       </div>
-      
-      {/* <img id='banner-img' src={imgPath?imgPath:"src/components/Banner/images/surau.png"} alt="" style={style}/> */}
+    
     </div>
    );
 }

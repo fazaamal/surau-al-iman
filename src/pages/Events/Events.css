@@ -19,19 +19,17 @@
 }
 
 .events .grid-item  {
+  @apply hover:scale-105 duration-300 ease-in-out;
   overflow:visible;
   position: relative;
   width: 100%;
 }
 
 .events .image-container {
+  @apply rounded-2xl hover:rounded-none transition-all duration-300 ease-in-out;
   width: 100%;
   padding-bottom: 66.68%;
-  position: relative;
-  /* top:0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
+  position: relative; 
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -51,24 +49,7 @@
 }
 
 .events h2 {
-  font-weight: 500;
-  margin-top: 0.5rem;
-}
-
-.events a {
-  text-decoration: none;
-}
-
-.events a:hover {
-  text-decoration: var(--primary-color, green) underline ;
-}
-
-.events .image-container {
-  transition: transform 0.3s ease; /* Add a smooth transition on hover */
-}
-
-.events .image-container:hover {
-  transform: scale(1.05); /* Increase the scale to zoom in (1.1 means 10% zoom) */
+  @apply font-semibold;
 }
 
 @media screen and (max-width: 600px) {

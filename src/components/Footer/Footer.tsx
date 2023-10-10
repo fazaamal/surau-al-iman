@@ -1,6 +1,7 @@
 import style from './Footer.module.css'; // You can style the footer in a separate CSS file
 
 const Footer = () => {
+    // todo: add links and stuff
     return (
         <footer className={style.footer}>
             <div className={`${style['grid-container']} center`}>

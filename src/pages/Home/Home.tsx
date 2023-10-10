@@ -78,7 +78,7 @@ const Home = () => {
         
         
     }, [eventFetch.data, slidesFetch.data])    
-    // Add zakat, prayer times
+    //todo: Add zakat, prayer times, latest announcement banner moving thingy
 
     return ( 
         <div className={style.home}>
