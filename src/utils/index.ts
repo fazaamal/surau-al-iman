@@ -3,7 +3,6 @@ import formatEpochTime from "./formatEpochTime";
 import setProperties from "./setProperties";
 import useFetch from "./useFetch";
 
-
 export {
   setProperties,
   callApi,

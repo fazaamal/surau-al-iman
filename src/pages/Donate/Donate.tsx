@@ -1,6 +1,6 @@
 import { Banner } from '../../components';
-import './Donate.css'
-import qr from './images/QR.png'
+import './Donate.css';
+import qr from './images/QR.png';
 
 const Donate = () => {
   return ( 

@@ -1,10 +1,10 @@
-import style from './Home.module.css';
 import { Carousel } from "@mantine/carousel";
 import { BackgroundImage, Card, CardSection, Grid, Skeleton, Text } from "@mantine/core";
+import { EventType, SlideType, checkType } from "al-iman-types";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFetch } from "../../utils";
-import { useEffect, useState } from "react";
-import { EventType, checkType, SlideType } from "al-iman-types";
+import style from './Home.module.css';
 // import '@coreui/coreui/dist/css/coreui.min.css'
 
 

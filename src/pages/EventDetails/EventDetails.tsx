@@ -1,10 +1,10 @@
+import { Text } from "@mantine/core";
+import { EventType } from "al-iman-types";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { Banner, ImageFrame } from "../../components";
 import { callApi, formatEpochTime } from "../../utils";
-import styles from './EventDetails.module.css'
-import { useParams } from "react-router-dom";
-import { EventType } from "al-iman-types";
-import { Text } from "@mantine/core";
+import styles from './EventDetails.module.css';
 // import { events } from "../Events/Events";
 
 const EventDetails = () => {

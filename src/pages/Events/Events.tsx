@@ -1,10 +1,10 @@
-import "./Events.css";
-import { Banner } from "../../components";
-import { Link } from "react-router-dom";
+import { Skeleton } from "@mantine/core";
 import { EventType, checkType } from "al-iman-types";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { Banner } from "../../components";
 import { useFetch } from "../../utils";
-import { Skeleton } from "@mantine/core";
+import "./Events.css";
 
 const EventLoadingCard = () => {
   return (

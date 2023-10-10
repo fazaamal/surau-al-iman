@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import { Banner, Announcement } from '../../components';
+import { Skeleton, Text, } from '@mantine/core';
 import { AnnouncementType, checkType } from 'al-iman-types';
-import style from './Announcements.module.css';
+import { useEffect, useState } from 'react';
+import { Announcement, Banner } from '../../components';
 import { formatEpochTime, useFetch } from '../../utils';
-import { Skeleton, Text,  } from '@mantine/core';
+import style from './Announcements.module.css';
 
 const AnnouncementLoadingCard = () => {
   return <>
@@ -31,6 +31,7 @@ const AnnouncementLoadingCard = () => {
 }
 
 const Announcements = () => {
+
   const [announcements, setAnnouncements] = useState<AnnouncementType[]>([]);
   const { data, error, isLoading } = useFetch('/announcements', {}, 1000);
   const [chosen, setChosen] = useState<AnnouncementType| null>(null);

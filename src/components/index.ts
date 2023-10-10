@@ -5,6 +5,7 @@ import Banner from "./Banner/Banner";
 import Footer from "./Footer/Footer";
 import Announcement from "./Announcement/Announcement";
 import ImageFrame from "./ImageFrame/ImageFrame";
+import ScrollToTop from "./ScrollToTop";
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     Banner,
     Footer,
     Announcement,
-    ImageFrame
+    ImageFrame,
+    ScrollToTop
 }

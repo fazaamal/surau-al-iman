@@ -1,6 +1,6 @@
-import style from './AboutUs.module.css';
 import { Banner } from "../../components";
 import picture from '../Home/images/about/amir.jpg';
+import style from './AboutUs.module.css';
 
 const AboutUs = () => {
   return ( 

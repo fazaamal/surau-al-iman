@@ -1,9 +1,9 @@
+import { Group, TextInput, Textarea } from "@mantine/core";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Banner } from "../../components";
-import style from './ContactUs.module.css';
-import { useState } from "react";
-import { Group, TextInput, Textarea } from "@mantine/core";
 import { fb, ig, tg } from "../../images/icons";
+import style from './ContactUs.module.css';
 import phone from './images/phone.svg';
 
 const ContactUs = () => {

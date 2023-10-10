@@ -68,7 +68,7 @@
 }
 
 .events .image-container:hover {
-  transform: scale(1.1); /* Increase the scale to zoom in (1.1 means 10% zoom) */
+  transform: scale(1.05); /* Increase the scale to zoom in (1.1 means 10% zoom) */
 }
 
 @media screen and (max-width: 600px) {

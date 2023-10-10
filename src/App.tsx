@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Header, Footer} from './components';
+import { Header, Footer, ScrollToTop} from './components';
 import { Donate, Events, Home, EventDetails, Announcements, ContactUs, AboutUs } from './pages';
 import './App.css';
 import { MantineProvider } from '@mantine/core';
@@ -29,6 +29,7 @@ function App() {
         fontFamily: 'Nunito, sans-serif',
       }} withCSSVariables withGlobalStyles={true} withNormalizeCSS= {false}>
         <Router>
+          <ScrollToTop/>
           <div className="App">
             <div>
               <Header />

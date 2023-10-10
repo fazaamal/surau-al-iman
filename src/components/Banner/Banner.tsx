@@ -14,7 +14,7 @@ const Banner = ({imgPath, text, title, style, blur=false}: {imgPath?:string, tit
       <div className='banner-text center' style={{
         zIndex:1000
       }}>
-        <h1 className='title' style={{
+        <h1 className='title font-bold text-4xl' style={{
           // fontWeight: 'bold',
           marginBottom: 0
         }

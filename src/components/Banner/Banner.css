@@ -57,19 +57,13 @@
   text-align: left;
   color: var(--primary-color, #d9d9d9);
   color: white;
-  font-size: 2.75rem;
-  font-weight: 400;
   z-index: 100;
 }
 
 .banner-text .title {
   /* font-size: 3rem; */
-  font-weight: 700;
+  /* font-weight: 700; */
   /* margin: 0; */
-}
-
-.banner-text .subtitle {
-  /* font-size: 2rem; */
 }
 
 
@@ -81,7 +75,7 @@
   }
 
   .banner-text .title {
-    font-size: 2rem;
+    /* font-size: 2rem; */
   }
 
   .banner-text .subtitle {
